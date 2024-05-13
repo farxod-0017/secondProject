@@ -1,0 +1,137 @@
+.contactCard {
+    padding: 40px 0 109px;
+}
+.touch_wrap {
+    padding: 48px 0;
+    border-top: 1px solid rgba(51, 50, 61, 0.155);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.155);
+    display: grid;
+    grid-template-columns: 43% 57%;
+    justify-content: space-between;
+}
+.touch_wrap h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    text-align: left; 
+}
+.touch_card {
+    max-width: 635px;
+    width: 100%;
+}
+.touch_card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    opacity: 80%;
+    margin-bottom: 24px;
+}
+.touch_icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.email_grid {
+    display: grid;
+    grid-template-columns: 43% 57%;
+    margin-top: 47px;
+    justify-content: space-between;
+}
+.email_grid h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    text-align: left;
+}
+.email_card form {
+    max-width: 635px;
+    width: 100%;
+}
+.email_card form input {
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-left: 16px;
+    background: rgba(51, 50, 61, 0.151);
+    border: none;
+}
+.email_card form textarea {
+    width: 100%;
+    height: 96px;
+    padding: 9px 16px;
+    border: none;
+    background: rgba(51, 50, 61, 0.151);
+    margin-bottom: 24px;
+}
+.email_card form p {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.email_card button {
+    width: 200px;
+    height: 48px;
+    background: rgba(32, 58, 76, 1);
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.1px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.email_card button:hover {
+    color: rgba(32, 58, 76, 1);
+    background: rgba(32, 58, 76, 0.26);
+    border: 2.5px solid rgba(32, 58, 76, 1);
+}
+
+@media(max-width:770px) {
+    .touch_wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .email_grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .email_grid h1 {
+        margin-bottom: 32px;
+    }
+    .email_card form {
+        max-width: 690px;
+    }
+    .touch_card {
+        max-width: 690px;
+    }
+    .touch_wrap h1  {
+        margin-bottom: 24px;
+    }
+    .touch_wrap {
+        padding: 32px 0;
+    }
+}
+@media(max-width:500px) {
+    .contactCard {
+        padding: 0px 0 80px;
+    }
+    .touch_wrap {
+        padding: 24px 0 32px;
+    }
+    .touch_card p {
+        font-size: 15px;
+    }
+    .email_grid {
+        margin-top: 32px;
+    }
+    .email_grid h1 {
+        margin-bottom: 24px;
+    }
+}
